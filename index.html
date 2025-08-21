@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Congratulations, My Love ❤️</title>
   
-  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap" rel="stylesheet">
 
-  <!-- AOS for Scroll Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
@@ -29,7 +27,7 @@
       align-items: center;
       text-align: center;
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                  url('/assets/Screenshot 2025-08-20 115322.png') no-repeat center/cover;
+                  url('assets/Screenshot 2025-08-20 115322.png') no-repeat center/cover;
       color: white;
     }
 
@@ -81,7 +79,6 @@
       color: #b8860b;
     }
 
-        /* Slideshow Gallery */
     .slideshow {
       position: relative;
       max-width: 700px;
@@ -106,7 +103,6 @@
     }
 
 
-    /* Birthday Section */
     .birthday {
       text-align: center;
       padding: 80px 20px;
@@ -123,7 +119,6 @@
       animation: glow 2s infinite alternate;
     }
 
-    /* Floating balloons */
     .balloon {
       width: 40px;
       height: 60px;
@@ -167,7 +162,6 @@
       color: #ffd700;
     }
 
-    /* Iconic Walk Section */
     .video-section {
       text-align: center;
     }
@@ -181,42 +175,35 @@
 </head>
 <body>
 
-  <!-- Hero -->
   <header>
     <h1>Congratulations, Sara 🎓⚖️</h1>
     <p>To the brightest Law Graduate.</p>
   </header>
 
-  <!-- Achievements Timeline -->
-  <!-- Achievements Timeline -->
-<!-- Achievements Timeline -->
 <section>
   <h2 data-aos="fade-up">Your Journey</h2>
   <div class="timeline">
     
-    <!-- University Days -->
     <div class="milestone" data-aos="fade-right">
       <h3>University Days</h3>
       <p><p>Countless nights of study, <s>coffee</s> matcha, and perseverance.</p>
 .</p>
-        <img src="/assets/salforddegree.png" alt="University Degree" 
+        <img src="assets/salforddegree.png" alt="University Degree" 
              style="max-width:300px; margin-top:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
       </a>
     </div>
 
-    <!-- Internship -->
     <div class="milestone" data-aos="fade-left">
       <h3>Internship</h3>
       <p>You came, you conquered, you left.</p>
-      <img src="/assets/internshipcer.jpeg" alt="Internship Certificate" 
+      <img src="assets/internshipcer.jpeg" alt="Internship Certificate" 
            style="max-width:300px; margin-top:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
     </div>
 
-    <!-- The Lawyer -->
     <div class="milestone" data-aos="fade-left">
       <h3>The Lawyer</h3>
       <p>Now, the world welcomes <b>Attorney Sara</b> with pride.</p>
-      <img src="/assets/TheLaywer.jpeg" alt="Sara the Lawyer" 
+      <img src="assets/TheLaywer.jpeg" alt="Sara the Lawyer" 
            style="max-width:300px; margin-top:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
     </div>
 
@@ -225,28 +212,25 @@
 
 
 
-   <!-- Law School Gallery (Slideshow Style) -->
   <section class="gallery" data-aos="fade-up">
     <h2>A7la Law Graduate 📚⚖️</h2>
     <div class="slideshow" id="slideshow">
-      <img src="/assets/pic1.jpg" class="slide active" alt="Memory 1">
-      <img src="/assets/pic2.jpeg" class="slide" alt="Memory 2">
-      <img src="/assets/pic3.JPG" class="slide" alt="Memory 3">
-      <img src="/assets/pic4.JPG" class="slide" alt="Memory 4">
+      <img src="assets/pic1.jpg" class="slide active" alt="Memory 1">
+      <img src="assets/pic2.jpeg" class="slide" alt="Memory 2">
+      <img src="assets/pic3.JPG" class="slide" alt="Memory 3">
+      <img src="assets/pic4.JPG" class="slide" alt="Memory 4">
     </div>
   </section>
 
-  <!-- The Iconic Walk (Video Section) -->
   <section class="iconic" data-aos="fade-up">
     <h2>The Iconic Walk ✨</h2>
     <video controls style="width:100%;max-width:700px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
-      <source src="/assets/iconicwalk.MOV" type="video/mp4">
+      <source src="assets/iconicwalk.MOV" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
 
 
-  <!-- Birthday Section -->
   <section class="birthday" data-aos="zoom-in" id="birthday">
     <h2>Happy Birthday, Sarsoora 🎉</h2>
     <p>May all your Dua's be answered. ❤️</p>
@@ -256,7 +240,6 @@
     <p id="secret">🎁 P.S. You're going to be Bahrain's best lawyer, by God's will.</p>
   </footer>
 
-  <!-- JS for AOS, Confetti & Auto-scroll Gallery -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script>
@@ -310,14 +293,12 @@
         releaseBalloons();
         celebrationStarted = true;
 
-        // Reveal hidden surprise message after 4s
         setTimeout(() => {
           document.getElementById('secret').style.opacity = 1;
         }, 4000);
       }
     }
 
-    // Detect scroll into view
     window.addEventListener("scroll", () => {
       const rect = birthdaySection.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom >= 0) {
@@ -325,7 +306,6 @@
       }
     });
 
-        // Slideshow for gallery
     const slides = document.querySelectorAll(".slideshow .slide");
     let currentSlide = 0;
 
@@ -335,7 +315,7 @@
       slides[currentSlide].classList.add("active");
     }
 
-    setInterval(showNextSlide, 4000); // 4s per image
+    setInterval(showNextSlide, 4000); 
 
 
     window.addEventListener("scroll", () => {
@@ -347,3 +327,4 @@
   </script>
 </body>
 </html>
+
