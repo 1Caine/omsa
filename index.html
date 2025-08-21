@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Congratulations, My Love ❤️</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- AOS for Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: #fefefe;
+      color: #222;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('/assets/Screenshot 2025-08-20 115322.png') no-repeat center/cover;
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+      animation: glow 3s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px gold; }
+      to { text-shadow: 0 0 20px gold; }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      border-bottom: 1px solid #eee;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #b8860b;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .timeline {
+      border-left: 3px solid #222;
+      margin-top: 40px;
+      padding-left: 20px;
+    }
+
+    .milestone {
+      margin: 30px 0;
+    }
+
+    .milestone h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 5px;
+      color: #b8860b;
+    }
+
+        /* Slideshow Gallery */
+    .slideshow {
+      position: relative;
+      max-width: 700px;
+      height: 450px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .slideshow img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+
+    /* Birthday Section */
+    .birthday {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #ffe0b2, #ffccbc);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .birthday h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    /* Floating balloons */
+    .balloon {
+      width: 40px;
+      height: 60px;
+      background: red;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      position: absolute;
+      bottom: -100px;
+      animation: floatUp 8s ease-in infinite;
+    }
+
+    .balloon::after {
+      content: '';
+      width: 2px;
+      height: 40px;
+      background: #555;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0) scale(1); opacity: 1; }
+      to { transform: translateY(-800px) scale(1.1); opacity: 0; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #222;
+      color: #eee;
+      position: relative;
+    }
+
+    footer p#secret {
+      opacity: 0;
+      transition: opacity 2s;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ffd700;
+    }
+
+    /* Iconic Walk Section */
+    .video-section {
+      text-align: center;
+    }
+    .video-section video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Congratulations, Sara 🎓⚖️</h1>
+    <p>To the brightest Law Graduate.</p>
+  </header>
+
+  <!-- Achievements Timeline -->
+  <!-- Achievements Timeline -->
+<!-- Achievements Timeline -->
+<section>
+  <h2 data-aos="fade-up">Your Journey</h2>
+  <div class="timeline">
+    
+    <!-- University Days -->
+    <div class="milestone" data-aos="fade-right">
+      <h3>University Days</h3>
+      <p><p>Countless nights of study, <s>coffee</s> matcha, and perseverance.</p>
+.</p>
+        <img src="/assets/salforddegree.png" alt="University Degree" 
+             style="max-width:300px; margin-top:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+      </a>
+    </div>
+
+    <!-- Internship -->
+    <div class="milestone" data-aos="fade-left">
+      <h3>Internship</h3>
+      <p>You came, you conquered, you left.</p>
+      <img src="/assets/internshipcer.jpeg" alt="Internship Certificate" 
+           style="max-width:300px; margin-top:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    </div>
+
+    <!-- The Lawyer -->
+    <div class="milestone" data-aos="fade-left">
+      <h3>The Lawyer</h3>
+      <p>Now, the world welcomes <b>Attorney Sara</b> with pride.</p>
+      <img src="/assets/TheLaywer.jpeg" alt="Sara the Lawyer" 
+           style="max-width:300px; margin-top:15px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    </div>
+
+  </div>
+</section>
+
+
+
+   <!-- Law School Gallery (Slideshow Style) -->
+  <section class="gallery" data-aos="fade-up">
+    <h2>A7la Law Graduate 📚⚖️</h2>
+    <div class="slideshow" id="slideshow">
+      <img src="/assets/pic1.jpg" class="slide active" alt="Memory 1">
+      <img src="/assets/pic2.jpeg" class="slide" alt="Memory 2">
+      <img src="/assets/pic3.JPG" class="slide" alt="Memory 3">
+      <img src="/assets/pic4.JPG" class="slide" alt="Memory 4">
+    </div>
+  </section>
+
+  <!-- The Iconic Walk (Video Section) -->
+  <section class="iconic" data-aos="fade-up">
+    <h2>The Iconic Walk ✨</h2>
+    <video controls style="width:100%;max-width:700px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+      <source src="/assets/iconicwalk.MOV" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+
+  <!-- Birthday Section -->
+  <section class="birthday" data-aos="zoom-in" id="birthday">
+    <h2>Happy Birthday, Sarsoora 🎉</h2>
+    <p>May all your Dua's be answered. ❤️</p>
+  </section>
+
+  <footer>
+    <p id="secret">🎁 P.S. You're going to be Bahrain's best lawyer, by God's will.</p>
+  </footer>
+
+  <!-- JS for AOS, Confetti & Auto-scroll Gallery -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    AOS.init();
+
+    const birthdaySection = document.getElementById('birthday');
+    let celebrationStarted = false;
+
+    function launchConfetti() {
+      var duration = 3 * 1000;
+      var end = Date.now() + duration;
+
+      (function frame() {
+        confetti({
+          particleCount: 5,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 }
+        });
+        confetti({
+          particleCount: 5,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }());
+    }
+
+    function releaseBalloons() {
+      for (let i = 0; i < 10; i++) {
+        let balloon = document.createElement("div");
+        balloon.className = "balloon";
+        balloon.style.left = Math.random() * 90 + "%";
+        balloon.style.background = `hsl(${Math.random()*360},70%,60%)`;
+        balloon.style.animationDelay = (Math.random() * 5) + "s";
+        birthdaySection.appendChild(balloon);
+
+        setTimeout(() => {
+          balloon.remove();
+        }, 8000);
+      }
+    }
+
+    function startCelebration() {
+      if (!celebrationStarted) {
+        launchConfetti();
+        releaseBalloons();
+        celebrationStarted = true;
+
+        // Reveal hidden surprise message after 4s
+        setTimeout(() => {
+          document.getElementById('secret').style.opacity = 1;
+        }, 4000);
+      }
+    }
+
+    // Detect scroll into view
+    window.addEventListener("scroll", () => {
+      const rect = birthdaySection.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        startCelebration();
+      }
+    });
+
+        // Slideshow for gallery
+    const slides = document.querySelectorAll(".slideshow .slide");
+    let currentSlide = 0;
+
+    function showNextSlide() {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }
+
+    setInterval(showNextSlide, 4000); // 4s per image
+
+
+    window.addEventListener("scroll", () => {
+      const rect = gallery.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        showGalleryImages();
+      }
+    });
+  </script>
+</body>
+</html>
